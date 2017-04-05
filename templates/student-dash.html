@@ -1,0 +1,48 @@
+{% extends "admin-layout.html" %}
+
+{% block content %}
+
+
+
+<h1 class="page-header">Dashboard</h1>
+<div class="row">
+	<div class="col-lg-12">
+			<div class="panel panel-default">
+					<div class="panel-heading">
+							Annoucements
+					</div>
+											<!-- .panel-heading -->
+		<div class="panel-body">
+				<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+								<div class="panel-heading">
+										<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">New Class to Meet ___ Requirement</a>
+										</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in">
+										<div class="panel-body">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</div>
+								</div>
+						</div>
+						<div class="panel panel-default">
+								<div class="panel-heading">
+										<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Reflection Due!</a>
+										</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse">
+										<div class="panel-body">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</div>
+								</div>
+						</div>
+				</div>
+				<a href="/announcements" class="btn btn-default btn-block">Manage Announcements</a>
+				</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

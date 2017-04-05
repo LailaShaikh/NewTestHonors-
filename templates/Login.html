@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/my-style.css">
+        
+        <style>
+            .jumbotron
+            {
+                position:fixed;
+                border-top-right-radius: 1em;
+                border-top-left-radius: 1em;
+                margin-left: 29%;
+                margin-right: 29%;
+                margin-top: 4%;
+                align-items: center;
+                background-color: dimgray;
+            }
+            .panel.panel-default{
+                margin-top: -10%;
+            }
+            .panel-body
+            {
+                margin-top: none;
+                height: 100px;
+                text-align:center;
+            }
+          
+            .input-group.input-group-lg,.btn.btn-default {
+                margin-top:10%;
+                margin-bottom:10%;
+                margin-left: 20%;
+                margin-right: 20%;
+                text-align:center;
+            } 
+        </style>        
+    </head>
+        
+    <body style="background-color: #ebf5fb">
+
+        <!--<nav class="navbar navbar-default">-->
+        <!--    <div class="container-fluid">    -->
+        <!--    </div> -->
+        <!--</nav>-->
+        
+        <h1 style="text-align:center; margin-top:5%">Honors Program</h1>
+        
+            <div class="jumbotron">  
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="static/img/LoginImage.png" alt="Mountain View" style="width:70px;height:70px;margin-top:5%, margin-bottom:5%">
+                    </div>
+                </div>
+                
+                <form method="post" action="/login">
+                    <div class="input-group input-group-lg"> 
+                    <a style="color: #ebf5fb" href=# ></a>
+                            <input type="text" class="form-control" placeholder="Username" name="Username" aria-describedby="sizing-addon1" style="margin-bottom: 30px; margin-top: 10%;"/>
+                            <input type="password" class="form-control" placeholder="Password" name="Password" aria-describedby="sizing-addon2"  style="margin-bottom: 30px;" />  
+                            <button style="margin-bottom: 15px;background-color:#FF9933; color:white;" class="form-control" type="submit">Sign-in</button>
+                            <a style="color: #ebf5fb" href="forgotPassword">forgot password?</a> 
+                            <br>    
+                            {% for field in form %}
+                                <strong style="color:white; font-style: normal;">{{field}}</strong>
+                            {% endfor %}
+                    </div>
+            </form>
+        </div>
+    </body>
+</html>
